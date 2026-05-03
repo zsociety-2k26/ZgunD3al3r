@@ -1,746 +1,237 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zgun | Dark Web</title>
-<meta name="description" content="The biggest selection from guns in the Europe. Gr&#1094;&#1071;ter auswahl von der Waffen in Europa.">
-<meta name="keywords" content="weapons,guns,arms,weaponry,arma,waffen,gewehre,knalle">
 
-<style type="text/css">
-div#container
-{
-   width: 1300px;
-   position: relative;
-   margin: 0 auto 0 auto;
-   text-align: left;
-}
-body
-{
-   background-color: #2F4F4F;
-   color: #FFFFFF;
-   font-family: Arial;
-   font-size: 13px;
-   margin: 0;
-   text-align: center;
-}
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon.png"/>
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/lib/styles.css" />
+  <link href='assets/lib/fonts/googlefonts.css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/lib/font-awesome/css/font-awesome.min.css">
 
-<style type="text/css">
-a
-{
-   color: #0000FF;
-   text-decoration: underline;
-}
-a:visited
-{
-   color: #800080;
-}
-a:active
-{
-   color: #FF0000;
-}
-a:hover
-{
-   color: #0000FF;
-   text-decoration: underline;
-}
-</style>
-<style type="text/css">
-#wb_Text2a 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: center;
-}
-#wb_Text2a div
-{
-   text-align: center;
-}
-#Line1a
-{
-   color: #FFFFFF;
-   background-color: #FFFFFF;
-   border-width: 0;
-}
-.ThemeMenuBar4aMenu,
-.ThemeMenuBar4aSubMenuTable
-{
-   font-family: Arial;
-   font-size: 13px;
-   font-weight: bold;
-   color: #FF8040;
-   text-align: left;
-   padding: 0;
-   cursor: pointer;
-}
-.ThemeMenuBar4aMenuOuter
-{
-   background-color: #000000;
-   border: 0;
-}
-.ThemeMenuBar4aSubMenu
-{
-   position: absolute;
-   visibility: hidden;
-   border: 0;
-   padding: 0;
-   border: 0;
-}
-.ThemeMenuBar4aMenu td
-{
-   padding: 0px 0px 0px 0px;
-}
-.ThemeMenuBar4aSubMenuTable
-{
-   color: #FF8040;
-   text-align: left;
-   background-color: #000000;
-   font-weight: bold;
-   font-style: normal;
-   text-decoration: none;
-}
-.ThemeMenuBar4aSubMenuTable td
-{
-   white-space: nowrap;
-}
-.ThemeMenuBar4aMainItem
-{
-}
-.ThemeMenuBar4aMainItem,
-.ThemeMenuBar4aMainItemHover,
-.ThemeMenuBar4aMainItemActive,
-.ThemeMenuBar4aMenuItem,
-.ThemeMenuBar4aMenuItemHover,
-.ThemeMenuBar4aMenuItemActive
-{
-   white-space: nowrap;
-}
-.ThemeMenuBar4aMenuItem
-{
-}
-.ThemeMenuBar4aMainItemHover,
-.ThemeMenuBar4aMainItemActive
-{
-   color: #FFFFFF;
-   background-color: #000000;
-   font-weight: bold;
-   font-style: normal;
-   text-decoration: none;
-}
-.ThemeMenuBar4aMenuItemHover,
-.ThemeMenuBar4aMenuItemActive
-{
-   color: #FFFFFF;
-   background-color: #000000;
-   font-weight: bold;
-   font-style: normal;
-   text-decoration: none;
-}
-.ThemeMenuBar4aMenuFolderLeft,
-.ThemeMenuBar4aMenuFolderRight,
-.ThemeMenuBar4aMenuItemLeft,
-.ThemeMenuBar4aMenuItemRight
-{
-   padding: 0px 0px 0px 0px;
-}
-td.ThemeMenuBar4aMainFolderText,
-td.ThemeMenuBar4aMainItemText
-{
-   padding: 0px 3px 0px 3px;
-}
-.ThemeMenuBar4aMenuFolderText,
-.ThemeMenuBar4aMenuItemText
-{
-   padding: 0px 3px 0px 3px;
-}
-td.ThemeMenuBar4aMenuSplit
-{
-   overflow: hidden;
-   background-color: inherit;
-}
-div.ThemeMenuBar4aMenuSplit
-{
-   height: 1px;
-   margin: 0;
-   overflow: hidden;
-   background-color: inherit;
-   border-top: 1px solid #FF8040;
-}
-.ThemeMenuBar4aMenuVSplit
-{
-   display: block;
-   width: 1px;
-   margin: 0 5px 0 5px;
-   overflow: hidden;
-   background-color: inherit;
-   border-right: 1px solid #FF8040;
-}
-#Line3a
-{
-   color: #FFFFFF;
-   background-color: #FFFFFF;
-   border-width: 0;
-}
-#wb_Text31 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: center;
-}
-#wb_Text31 div
-{
-   text-align: center;
-}
-#wb_Text73 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: center;
-}
-#wb_Text73 div
-{
-   text-align: center;
-}
-#wb_Text125a 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: left;
-}
-#wb_Text125a div
-{
-   text-align: left;
-}
-#PhotoGallery1
-{
-   border-spacing: 0px;
-   width: 100%;
-}
-#PhotoGallery1 .figure
-{
-   padding: 6px 6px 6px 6px;
-   text-align: center;
-   vertical-align: top;
-}
-#PhotoGallery1 .figure img
-{
-   border: 0px #000000 solid;
-}
-#Image1a
-{
-   border: 0px #000000 solid;
-}
-#Image2a
-{
-   border: 0px #000000 solid;
-}
-#wb_Text8 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: left;
-}
-#wb_Text8 div
-{
-   text-align: left;
-}
-#wb_Text66 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: left;
-}
-#wb_Text66 div
-{
-   text-align: left;
-}
-#wb_Text67 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: left;
-}
-#wb_Text67 div
-{
-   text-align: left;
-}
-#wb_Text68 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: left;
-}
-#wb_Text68 div
-{
-   text-align: left;
-}
-#wb_Text69 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: center;
-}
-#wb_Text69 div
-{
-   text-align: center;
-}
-#wb_Text86 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: left;
-}
-#wb_Text86 div
-{
-   text-align: left;
-}
-#wb_Text1 
-{
-   background-color: transparent;
-   border: 0px #000000 solid;
-   padding: 0;
-   text-align: left;
-}
-#wb_Text1 div
-{
-   text-align: left;
-}
-</style>
+    <script src="assets/lib/jquery/jquery-3.7.0.min.js" ></script>
+    <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.js"></script>
+
+    <title>Electronics - TOR SHOP | DARK WEB MARKETPLACE</title>
+
 </head>
-
 <body>
-<div id="container">
-<div id="wb_Text2a" style="position:absolute;left:46px;top:8px;width:162px;height:122px;text-align:center;z-index:0;">
- <span style="color:#FFFFFF;font-family:Arial;font-size:27px;"><strong>&nbsp; </strong></span>
- <span style="color:#FFFFFF;font-family:Arial;font-size:24px;"><strong>Luckp</strong></span>
- <span style="color:#FFFFFF;font-family:Arial;font-size:27px;"><strong><br> </strong></span>
- <span style="color:#FF8000;font-family:Arial;font-size:35px;"><strong>47</strong></span>
- <span style="color:#FFFFFF;font-family:Arial;font-size:27px;"><strong><br></strong></span>
- <span style="color:#FFFFFF;font-family:Arial;font-size:21px;"><strong> SHOP<br></strong></span>
- <br>
- <span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><strong>&nbsp;&nbsp; World War</strong></span>
+<div>
+<div class="top-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-sm-7">
+                <ul class="top-menu">
+
+                    <li><a href="escrow.php">Escrow</a></li>
+                    <li><a href="proofs.php">Proofs</a></li>
+                    <li><a href="refund-policy.php">Refund Policy</a></li>
+                    <li><a href="vendors.php">Vendors </a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+                </ul></div>
+            <div class="col-md-4 text-right col-sm-5">
+
+
+                <span class='bitcoin-price-span'>1 BTC = 78694 $</span>
+                        <a href="register.php" class="ac-header "><i class="fa fa-user-circle-o" aria-hidden="true"></i> Register</a>/
+                        <a href="login.php" class="ac-header"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+
+                
+
+            </div>
+        </div>
+    </div>
 </div>
 
-<div id="wb_Image1a" style="position:absolute;left:244px;top:12px;width:223px;height:128px;z-index:8;">
- <img src="images/rsep.jpg" id="Image1a" alt="" style="width:223px;height:128px;">
+
+    <div class="header">
+        <div class="container-fluid row">
+            <div class="col-md-3 col-sm-3 justify-content-center align-self-center">
+                <a href="home.php"><img src="assets/img/logo.png" class="img-fluid"></a>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs "></div>
+            <div class="col-md-2 cart-small-box text-right col-sm-3 col-xs-12 justify-content-center align-self-center">
+                                <a href="cart.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span id="cart_content">0</span> items</a>
+            </div>
+            <div class="col-md-2 text-right col-sm-3 hidden-xs justify-content-center align-self-center">
+                <a href="hot-sale.php" class="hot-sale-btn">
+                    <img src="assets/img/saleb.gif" class="sale-imgn img-fluid">
+                </a>
+            </div>
+            <div class="col-md-2 text-right col-sm-3 col-xs-12 justify-content-center align-self-center">
+                <a href="support.php" class="support-btn">
+                    <span><img src="assets/img/support.png" class="img-header img-fluid"></span>
+                    SUPPORT
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div id="wb_Image2a" style="position:absolute;left:491px;top:13px;width:228px;height:129px;z-index:9;">
- <img src="images/prs2.jpg" id="Image2a" alt="" style="width:228px;height:128px;">
+
+
+        <nav class="nav-item-custom  navbar navbar-expand-sm bg-light navbar-light justify-content-center nav-fill w-100" style=" background: #bebebf7d !important;">
+            <ul class="navbar-nav " style="width: 100%;">
+                <li class="nav-item nav-item-custom">
+                    <a class="nav-link" href="category.php?category=Carding">Carding</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                    <a class="nav-link" href="category.php?category=Money Transfers">Money transfers</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                    <a class="nav-link" href="category.php?category=Electronics">Electronics</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                    <a class="nav-link" href="category.php?category=Drugs">Drugs</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                    <a class="nav-link" href="category.php?category=Gift Cards">Gift Cards</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                    <a class="nav-link" href="category.php?category=Hacking">Hacking</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                    <a class="nav-link" href="category.php?category=Porn and Erotic">Porn and Erotic</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                    <a class="nav-link" href="category.php?category=Others">Others</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+<div class="space-20"></div>
+<div class="container-fluid">
+    <ul class="breadcrumb" style="background: none ! important;">
+        <li><a href="home.php"><span>Home</span></a></li>
+
+
+        <li><span>Electronics</span></li>
+
+    </ul>
+
+    <div class="space-10"></div>
+
+
+
+    <h1 class="heading-text-vendor">Electronics</h1>
+    <div class="space-10"></div>
+
+
+        <div class="vendors">
+
+        <h2 class="title-catalog">Vendors</h2>
+
+            			<div class='row'><div class='col-md-3 col-sm-4'>		<div class='vendors-list-item'>			<div class='vendors-list-item-div'>				<a href='vendor.php?vendor=steve-jobs-team'><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png' class='img-fluid'></a>			</div>			<a href='vendor.php?vendor=steve-jobs-team' class='vendors-list-item-title'>Steve Jobs Team</a>			<div class='row'><div class='vendors-list-item-status col-md-6 col-sm-6'>										<span class='online'><i class='fa fa-circle' aria-hidden='true'></i> Online</span>								</div>			<div class='vendors-list-item-rating col-md-6 col-sm-6'>									<div class='raiting'>					<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i>					</div></div>							</div>			<div class='clearfix'></div>			<div class='vendors-list-item-category'>				<b>Categories:</b> <a class='link' href='category.php?category=Electronics'>Electronics</a>, 							</div>			<div class='vendors-list-item-since col-md-12'>				<b>Seller since:</b>				<span>04.20</span>			</div>			<div class='row'>			<div class='vendors-list-item-sales col-md-6'>				<b>Sales:</b>				<span>13881</span>			</div>			<div class='col-md-6 text-right'><a href='vendor.php?vendor=steve-jobs-team' class='btn btn-theme btn-sm '>Show</a></div>			</div>			<div class='clearfix'>			</div>		</div>	</div><div class='col-md-3 col-sm-4'>		<div class='vendors-list-item'>			<div class='vendors-list-item-div'>				<a href='vendor.php?vendor=gamer-studio'><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png' class='img-fluid'></a>			</div>			<a href='vendor.php?vendor=gamer-studio' class='vendors-list-item-title'>Gamer Studio</a>			<div class='row'><div class='vendors-list-item-status col-md-6 col-sm-6'>										<span class='online'><i class='fa fa-circle' aria-hidden='true'></i> Online</span>								</div>			<div class='vendors-list-item-rating col-md-6 col-sm-6'>									<div class='raiting'>					<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i>					</div></div>							</div>			<div class='clearfix'></div>			<div class='vendors-list-item-category'>				<b>Categories:</b> <a class='link' href='category.php?category=Electronics'>Electronics</a>, 							</div>			<div class='vendors-list-item-since col-md-12'>				<b>Seller since:</b>				<span>09.20</span>			</div>			<div class='row'>			<div class='vendors-list-item-sales col-md-6'>				<b>Sales:</b>				<span>12176</span>			</div>			<div class='col-md-6 text-right'><a href='vendor.php?vendor=gamer-studio' class='btn btn-theme btn-sm '>Show</a></div>			</div>			<div class='clearfix'>			</div>		</div>	</div><div class='col-md-3 col-sm-4'>		<div class='vendors-list-item'>			<div class='vendors-list-item-div'>				<a href='vendor.php?vendor=mobile-store'><img src='assets/vendors/639c0cac31f47a6654ffcac090074602.png' class='img-fluid'></a>			</div>			<a href='vendor.php?vendor=mobile-store' class='vendors-list-item-title'>Mobile store</a>			<div class='row'><div class='vendors-list-item-status col-md-6 col-sm-6'>										<span class='online'><i class='fa fa-circle' aria-hidden='true'></i> Online</span>								</div>			<div class='vendors-list-item-rating col-md-6 col-sm-6'>									<div class='raiting'>					<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i>					</div></div>							</div>			<div class='clearfix'></div>			<div class='vendors-list-item-category'>				<b>Categories:</b> <a class='link' href='category.php?category=Electronics'>Electronics</a>, 							</div>			<div class='vendors-list-item-since col-md-12'>				<b>Seller since:</b>				<span>01.21</span>			</div>			<div class='row'>			<div class='vendors-list-item-sales col-md-6'>				<b>Sales:</b>				<span>11958</span>			</div>			<div class='col-md-6 text-right'><a href='vendor.php?vendor=mobile-store' class='btn btn-theme btn-sm '>Show</a></div>			</div>			<div class='clearfix'>			</div>		</div>	</div>	</div>        </div>
+    <div class="space-10"></div>
+    <hr>
+        <div class="products">
+
+            <h2 class="title-catalog">Products</h2>
+
+            			<div class='row'> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=iphone-17-256'><img src='assets/products/487svejdfk150a0.png' class='img-fluid'></a></div>	<a href='product.php?product=iphone-17-256' class='catalog-section-list-item-title'>iPhone 17 - 256GB</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=steve-jobs-team'><span><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png'></span>Steve Jobs Team</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$450</span>					<a href='product.php?product=iphone-17-256' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=iphone-17-512'><img src='assets/products/487svejdfk150a0.png' class='img-fluid'></a></div>	<a href='product.php?product=iphone-17-512' class='catalog-section-list-item-title'>iPhone 17 - 512GB</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=steve-jobs-team'><span><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png'></span>Steve Jobs Team</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$550</span>					<a href='product.php?product=iphone-17-512' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=iphone-17-air-512'><img src='assets/products/brvva31kiuxtvwo.png' class='img-fluid'></a></div>	<a href='product.php?product=iphone-17-air-512' class='catalog-section-list-item-title'>iPhone Air - 512GB</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=steve-jobs-team'><span><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png'></span>Steve Jobs Team</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$600</span>					<a href='product.php?product=iphone-17-air-512' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=ps5-gamer-studio'><img src='assets/products/xlfl7m41hjiqh40urz9s9zhxnt7nbz4i.png' class='img-fluid'></a></div>	<a href='product.php?product=ps5-gamer-studio' class='catalog-section-list-item-title'>PlayStation 5 Console</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$250</span>					<a href='product.php?product=ps5-gamer-studio' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=ps5-ditial'><img src='assets/products/c2avwfyqy5ehqi3cibh0apostic0y6uu.png' class='img-fluid'></a></div>	<a href='product.php?product=ps5-ditial' class='catalog-section-list-item-title'>PlayStation 5 Console - Digital</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='old-price'>$399</span>						<span class='price'>$180</span>					<a href='product.php?product=ps5-ditial' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=meta-quest-3-vr'><img src='assets/products/1j0hy53c1co7zjpi413ifsx22nyzcnyt.png' class='img-fluid'></a></div>	<a href='product.php?product=meta-quest-3-vr' class='catalog-section-list-item-title'>Meta - Quest 3</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$180</span>					<a href='product.php?product=meta-quest-3-vr' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=iphone-17-air-1tb'><img src='assets/products/brvva31kiuxtvwo.png' class='img-fluid'></a></div>	<a href='product.php?product=iphone-17-air-1tb' class='catalog-section-list-item-title'>iPhone Air - 1Tb</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=steve-jobs-team'><span><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png'></span>Steve Jobs Team</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$650</span>					<a href='product.php?product=iphone-17-air-1tb' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=iphone-17-pro-512gb'><img src='assets/products/zw4yd0bqnxa6ad4.png' class='img-fluid'></a></div>	<a href='product.php?product=iphone-17-pro-512gb' class='catalog-section-list-item-title'>iPhone Pro - 512GB</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=steve-jobs-team'><span><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png'></span>Steve Jobs Team</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$650</span>					<a href='product.php?product=iphone-17-pro-512gb' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=iphone-17-pro-1tb'><img src='assets/products/zw4yd0bqnxa6ad4.png' class='img-fluid'></a></div>	<a href='product.php?product=iphone-17-pro-1tb' class='catalog-section-list-item-title'>iPhone Pro - 1TB</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=steve-jobs-team'><span><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png'></span>Steve Jobs Team</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$750</span>					<a href='product.php?product=iphone-17-pro-1tb' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=bose-a30-headset'><img src='assets/products/bn1ji04qyge3thhawgguhji33u5s26ou.png' class='img-fluid'></a></div>	<a href='product.php?product=bose-a30-headset' class='catalog-section-list-item-title'>Bose - A30 Bluetooth Headset</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$260</span>					<a href='product.php?product=bose-a30-headset' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=iphone-17-pro-max-1tb'><img src='assets/products/vi4fi3rxordf0fn.png' class='img-fluid'></a></div>	<a href='product.php?product=iphone-17-pro-max-1tb' class='catalog-section-list-item-title'>iPhone Pro Max - 1TB</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=steve-jobs-team'><span><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png'></span>Steve Jobs Team</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$700</span>					<a href='product.php?product=iphone-17-pro-max-1tb' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=iphone-17-pro-max-2tb'><img src='assets/products/vi4fi3rxordf0fn.png' class='img-fluid'></a></div>	<a href='product.php?product=iphone-17-pro-max-2tb' class='catalog-section-list-item-title'>iPhone Pro Max - 2TB</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=steve-jobs-team'><span><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png'></span>Steve Jobs Team</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$800</span>					<a href='product.php?product=iphone-17-pro-max-2tb' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=airpods-max'><img src='assets/products/8mrfdc6ffh0rznc.png' class='img-fluid'></a></div>	<a href='product.php?product=airpods-max' class='catalog-section-list-item-title'>Airpods Max</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=steve-jobs-team'><span><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png'></span>Steve Jobs Team</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$250</span>					<a href='product.php?product=airpods-max' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=m4-max-16inch-macbook-pro'><img src='assets/products/gsfh4l11pcpqnlo.png' class='img-fluid'></a></div>	<a href='product.php?product=m4-max-16inch-macbook-pro' class='catalog-section-list-item-title'>2025 - M4 Max - 16 Inch MacBook Pro</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=steve-jobs-team'><span><img src='assets/vendors/c8c1e65126151b4de9b69042e62eac5c.png'></span>Steve Jobs Team</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$800</span>					<a href='product.php?product=m4-max-16inch-macbook-pro' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=geforce-rtx-5080'><img src='assets/products/i5op8zd4mn03meo.png' class='img-fluid'></a></div>	<a href='product.php?product=geforce-rtx-5080' class='catalog-section-list-item-title'>GeForce RTX 5090</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$650</span>					<a href='product.php?product=geforce-rtx-5080' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=asus-nvidia-geforce-4090-24gb'><img src='assets/products/df85238y7vx0gbr4crsbn0f7va7tskvu.png' class='img-fluid'></a></div>	<a href='product.php?product=asus-nvidia-geforce-4090-24gb' class='catalog-section-list-item-title'>ASUS - NVIDIA GeForce RTX 4090 24GB GDDR6X Graphics Card - Black</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$300</span>					<a href='product.php?product=asus-nvidia-geforce-4090-24gb' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=msi-nvidia-4080-16gb'><img src='assets/products/0yef17qn5ggxih3g5t2utf71fdc8mw1m.png' class='img-fluid'></a></div>	<a href='product.php?product=msi-nvidia-4080-16gb' class='catalog-section-list-item-title'>MSI - NVIDIA GeForce RTX 4080 16GB Graphics Card - Black</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$175</span>					<a href='product.php?product=msi-nvidia-4080-16gb' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=gigabyte-nvidia-4080-16gb'><img src='assets/products/ld9y48czwq0lw7ieplf63uirmm71xd1t.png' class='img-fluid'></a></div>	<a href='product.php?product=gigabyte-nvidia-4080-16gb' class='catalog-section-list-item-title'>GIGABYTE - NVIDIA GeForce RTX 4080 Eagle 16GB Graphics Card - Black</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$150</span>					<a href='product.php?product=gigabyte-nvidia-4080-16gb' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=bitmain-antminer-s19k-pro'><img src='assets/products/92bwxlz51rl5xl9movfbtd5dv5d3khet.png' class='img-fluid'></a></div>	<a href='product.php?product=bitmain-antminer-s19k-pro' class='catalog-section-list-item-title'>Bitmain Antminer S19K Pro 120TH/s 2760W</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='old-price'>$999</span>						<span class='price'>$650</span>					<a href='product.php?product=bitmain-antminer-s19k-pro' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=asus-rog-m16-16inch'><img src='assets/products/cg31s1f34thcfyyq2tli1m30zn83r396.png' class='img-fluid'></a></div>	<a href='product.php?product=asus-rog-m16-16inch' class='catalog-section-list-item-title'>ASUS - ROG Zephyrus M16 16 Inch Gaming Laptop</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$550</span>					<a href='product.php?product=asus-rog-m16-16inch' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=msi-crosshair-16inch'><img src='assets/products/a1xmrgwpojw063zed7g7cksofns8x2wp.png' class='img-fluid'></a></div>	<a href='product.php?product=msi-crosshair-16inch' class='catalog-section-list-item-title'>MSI - Crosshair 16 Inch - Gaming Laptop</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$350</span>					<a href='product.php?product=msi-crosshair-16inch' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=hp-omen-16inch'><img src='assets/products/g75b11dffubgtznlgx3p08a023jvr8e5.png' class='img-fluid'></a></div>	<a href='product.php?product=hp-omen-16inch' class='catalog-section-list-item-title'>HP OMEN - 16.1 Inch Gaming Laptop</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$250</span>					<a href='product.php?product=hp-omen-16inch' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=sennheiser-hd800'><img src='assets/products/b995u938770445bqfoc2wfgu9ikamwmj.png' class='img-fluid'></a></div>	<a href='product.php?product=sennheiser-hd800' class='catalog-section-list-item-title'>Sennheiser - HD 800 S Headphones</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=gamer-studio'><span><img src='assets/vendors/2865afa1f0bd90cacbad492a4ab04eec.png'></span>Gamer Studio</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$300</span>					<a href='product.php?product=sennheiser-hd800' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=samsung-s23-ultra-256gb-12gb'><img src='assets/products/82grzqmxr02h434v8bwp59au79qt8927.png' class='img-fluid'></a></div>	<a href='product.php?product=samsung-s23-ultra-256gb-12gb' class='catalog-section-list-item-title'>SAMSUNG Galaxy S25 Ultra 5G (White,  1 TB)  (16 GB RAM)</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=mobile-store'><span><img src='assets/vendors/639c0cac31f47a6654ffcac090074602.png'></span>Mobile store</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$500</span>					<a href='product.php?product=samsung-s23-ultra-256gb-12gb' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=samsung-fold-z-5'><img src='assets/products/5g4t2bqh6m9m3jmlom39q9n3xngu8m6o.png' class='img-fluid'></a></div>	<a href='product.php?product=samsung-fold-z-5' class='catalog-section-list-item-title'>SAMSUNG Galaxy Z Fold 7 Cell Phone - 512GB</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=mobile-store'><span><img src='assets/vendors/639c0cac31f47a6654ffcac090074602.png'></span>Mobile store</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$450</span>					<a href='product.php?product=samsung-fold-z-5' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=oneplus-open'><img src='assets/products/dl4avv423ty6gpw1gwwbtzjm8klfdn6g.png' class='img-fluid'></a></div>	<a href='product.php?product=oneplus-open' class='catalog-section-list-item-title'>OnePlus Open</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=mobile-store'><span><img src='assets/vendors/639c0cac31f47a6654ffcac090074602.png'></span>Mobile store</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$399</span>					<a href='product.php?product=oneplus-open' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=xiaomi-13-pro'><img src='assets/products/mzm7gxjqa5dldl739u1drr25nevkzjx6.png' class='img-fluid'></a></div>	<a href='product.php?product=xiaomi-13-pro' class='catalog-section-list-item-title'>XIAOMI 13 PRO - 12GB RAM - 512GB - Black</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=mobile-store'><span><img src='assets/vendors/639c0cac31f47a6654ffcac090074602.png'></span>Mobile store</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$300</span>					<a href='product.php?product=xiaomi-13-pro' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=honor-magic5'><img src='assets/products/7qhygpun3obkzq8e5adivk5wk6ucnl7q.png' class='img-fluid'></a></div>	<a href='product.php?product=honor-magic5' class='catalog-section-list-item-title'>Honor Magic5 Pro - 12GB - 512GB</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=mobile-store'><span><img src='assets/vendors/639c0cac31f47a6654ffcac090074602.png'></span>Mobile store</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$600</span>					<a href='product.php?product=honor-magic5' class='btn btn-theme'>Detail</a>	</div></div></div> <div class='col-md-3 col-sm-4'> 	<div class='catalog-section-list-item'>	<div class='catalog-section-list-item-img'>		<a href='product.php?product=pixel-8-128gb'><img src='assets/products/a6uustms15mmhq2kz5dmx16h570n0ovt.png' class='img-fluid'></a></div>	<a href='product.php?product=pixel-8-128gb' class='catalog-section-list-item-title'>Google Pixel 8 Pro - Unlocked - 128GB</a>	<div class='catalog-section-list-item-vendor-block'>			<a href='vendor.php?vendor=mobile-store'><span><img src='assets/vendors/639c0cac31f47a6654ffcac090074602.png'></span>Mobile store</a>	</div>	<div class='catalog-section-list-item-price'>						<span class='price'>$250</span>					<a href='product.php?product=pixel-8-128gb' class='btn btn-theme'>Detail</a>	</div></div></div>	</div>            <div class="space-30"></div>
+        </div>
+
+
+
+
 </div>
 
-<div id="wb_Image2a" style="position:absolute;left:950px;top:13px;width:228px;z-index:9;">
-   <p style="font-size:1.3em; text-decoration:underline; text-align:center">Advertisement</p>
-   <a style="text-align:center" href="http://hiddenwwiqg2jb5s3wyvzxeipcl5ese2pa2cqnu6myi3d5bcmhmdagqd.onion" target="_blank"><img width="250" src="/images/ads1.jpg" alt="" align="middle" border="1px solid black;"/></a>   
+
+
+
+
+<div class="footer">
+    <div class="container-fluid ">
+        <div class="row">
+        <div class="col-md-1 footer-img text-center col-sm-1">
+            <img src="assets/img/shield-protect.png">
+        </div>
+        <div class="col-md-2 footer-text col-sm-2">
+            Rest assured that our platform prioritizes security and trust. Payments are processed to the seller only upon successful delivery of your order, mitigating any potential risks. In the unlikely event of an issue, a refund will be promptly initiated to safeguard your financial interests.
+        </div>
+        <div class="col-md-1 footer-img text-center col-sm-1">
+            <img src="assets/img/feature-support.png">
+        </div>
+        <div class="col-md-2 footer-text col-sm-2">
+            Exceptional customer support is at your disposal. Our dedicated team is readily available to assist you, ensuring prompt resolution to any concerns or issues you may encounter.
+
+        </div>
+        <div class="col-md-1 footer-img text-center col-sm-1">
+            <img src="assets/img/anonymity.png">
+        </div>
+        <div class="col-md-2 footer-text col-sm-2">
+
+            You can have confidence in your safety and confidentiality. Our services encompass Bitcoin mixing and message encryption, ensuring the protection of your privacy and personal information.        </div>
+        <div class="col-md-1 footer-img text-center col-sm-1">
+            <img src="assets/img/speech-bubbles-comment-option.png">
+        </div>
+        <div class="col-md-2 footer-text col-sm-2">
+            Gain insights from authentic customer reviews prior to placing your order.
+        </div>
+        </div>
+        <div class="clearfix"></div>
+        <hr>
+        <div class="row">
+        <div class="col-md-2 col-sm-3">
+            <ul>
+                <li><a href="category.php?category=Carding">Carding</a></li>
+                <li><a href="category.php?category=Money Transfers">Money transfers</a></li>
+                <li><a href="category.php?category=Electronics">Electronics</a></li>
+                <li><a href="category.php?category=Drugs">Drugs</a></li>
+                <li><a href="category.php?category=Gift Cards">Gift Cards</a></li>
+                <li><a href="category.php?category=Hacking">Hacking</a></li>
+
+                <li><a href="category.php?category=Porn and Erotic">Porn and Erotic</a></li>
+                <li><a href="category.php?category=Others">Others</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-3">
+            <ul>
+                <li><a href="escrow.php">Escrow</a></li>
+                <li><a href="proofs.php">Proofs</a></li>
+                <li><a href="refund-policy.php">Refund Policy</a></li>
+                <li><a href="vendors.php">Vendors </a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-3">
+            <ul>
+                <li><a href="account.php">Account</a></li>
+
+                <li><a href="messages.php">Messages</a></li>
+                <li><a href="hot-sale.php">Offer Zone</a></li>
+
+
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-3">
+            <ul>
+
+                <li><a href="become-vendor.php">Become a Vendor</a></li>
+                <li><a href="vendor-login.php">Vendor Login</a></li>
+
+
+            </ul>
+        </div>
+            <div class="col-md-1 text-center hidden-sm"><br><br>
+            </div>
+        <div class="col-md-3 col-sm-3"><a href="home.php"><img src="assets/img/footer-logo.png" class="img-responsive footer-logo"></a>
+            <br>
+            <p class="text-center">Copyright © 2020-2026 TOR SHOP</p>
+        </div>
+    </div>
+    </div>
 </div>
 
-<hr id="Line1a" style="margin:0;padding:0;position:absolute;left:55px;top:150px;width:700px;height:1px;z-index:1;">
-<div id="wb_MenuBar4a" style="position:absolute;left:65px;top:157px;width:965px;height:18px;z-index:1002;">
- <div id="MenuBar4a">
-<table border="0" cellpadding="0"  cellspacing="0"  style="text-align:center;color:white;vertical-align:top">
-	<tr >
-		<td rowspan="2">&nbsp;</td>
-		<td style="font-family:Arial">Rate:</td>
-        <td style="font-family:Arial"><span style="color:#FFFF00">&nbsp;&nbsp;Donate</span> to the address below if you want to support our fight:&nbsp;&nbsp;</td>
-		<td style="font-family:Arial">Contact us:</td>
-	</tr>
-	<tr>		
-		<td style="color:#FFFF00;font-family:Arial">&nbsp;&nbsp;&nbsp;&nbsp;1BTC=67001 Euro&nbsp;&nbsp;&nbsp;&nbsp;</td>
-		<td style="color:#FFFF00;font-family:Arial;font-weight:bold">3GLxdvfR34ezFwffDugDUA2chh3e6ccrjb</td>
-		<td style="color:#FFFF00;font-family:Arial">&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:luckp47@bitemail.net" style="color:#FFFF00">luckp47@bitemail.net</a></td>
-	</tr>
-</table>
- </div>
-</div>
-<hr id="Line3a" style="margin:0;padding:0;position:absolute;left:55px;top:193px;width:700px;height:1px;z-index:3;">
-
-<div id="wb_PhotoGallery1" style="position:absolute;left:1px;top:203px;width:1275px;height:4323px;z-index:7;">
-<br>
-
-<table id="PhotoGallery1">
-  <tr><th colspan="4"><span style="font-size:1.3em; text-decoration:underline;margin-left:10px">Catalogue</span></th> 
-  <tr><th colspan="4">&nbsp;</th> 
-  <tr><th colspan="4"><span style="font-size:1.2em; text-decoration:underline;margin-left:10px">Glock</span> <span style="font-size:1.1em"> is a firearm that showed the best results in reliability and safety tests</span></th>
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/3d.jpg" style="width:300px;" align="bottom">Glock 17, 3.gen, 9x19mm<br>Price: &#8364;700=&#3647;0.01045</p>
-    </td> 
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/024.jpg" style="width:300px;" align="bottom">Glock 17 gen.4, 9x19mm<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/Glock17kal9LUGER.jpg" style="width:300px;" align="bottom">Glock 17 IV kal.9Luger<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>   
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/07.jpg" style="width:300px;" align="bottom">Glock 17 Luger, 9x19+ Lamp original Glock<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>    
-   </tr>  
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/1abc.jpg" style="width:300px;" align="bottom">Glock19 gen4 9mm <br>Price: &#8364;850=&#3647;0.01269</p>
-    </td>    
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2i.jpg" style="width:300px;" align="bottom">Glock 19 gen. 4, ca. 9x19mm<br>Price: &#8364;850=&#3647;0.01269</p>
-    </td>    
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/3e.jpg" style="width:300px;" align="bottom">GLOCK 19 Gen4 9mm Luger<br>Price: &#8364;900=&#3647;0.01343</p>
-    </td>   
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/Glgen5.jpg" style="width:300px;" align="bottom">Glock19 Gen5 Compact 9x19mm<br>Price: &#8364;900=&#3647;0.01343</p>
-    </td>         
-   </tr>   
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/06.jpg" style="width:300px;" align="bottom">Glock 21c, .45 automatic colt pistol<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>  
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/3web.jpg" style="width:300px;" align="bottom">Glock 9x21 with silencer<br>Price: &#8364;900=&#3647;0.01343</p>
-    </td> 
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/Glock22kal40.jpg" style="width:300px;" align="bottom">Glock 22 IV kal.40SW.<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>      
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/Glock26kal9LUGER.jpg" style="width:300px;" align="bottom">Glock 26 IV kal.Luger<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>              
-   </tr>
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/GL304GEN.jpg" style="width:300px;" align="bottom">Glock30 4GEN kal.45ACP <br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>           
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/GL344Gen.jpg" style="width:300px;" align="bottom">Gock 34 4Gen kal.9LUGER<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>   
-  
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/GL42.jpg" style="width:300px;" align="bottom">GL42 IV kal.380 AUTO<br>Price: &#8364;700=&#3647;0.01045</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">  &nbsp;  </td>         
-   </tr> 
-   
-   <tr><th colspan="4"><span style="font-size:1.2em; text-decoration:underline;margin-left:10px">CZ</span> <span style="font-size:1.1em">  this is one of the most reliable pistols for home/self-defense</span></th>
-   <tr>  
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/020.jpg" style="width:300px;" align="bottom">CZ 75 SP - 01 Shadow 9mm Luger<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2o.jpg" style="width:300px;" align="bottom">CZ 75B, 9mm Luger<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>    
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2h.jpg" style="width:300px;" align="bottom">CZ 75B 9mm Luger+Adapter Kadet .2<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>    
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/034.jpg" style="width:300px;" align="bottom">CZ 75D, Compact PCR 9mm<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>     
-   </tr>     
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2r.jpg" style="width:300px;" align="bottom">CZ 75, special edition<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>     
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/023.jpg" style="width:300px;" align="bottom">CZ 83 Jane .22LR<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>   
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2s.jpg" style="width:300px;" align="bottom">CZ 85 9mm Luger<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>  
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/04.jpg" style="width:300px;" align="bottom">CZ SP-01 Shadow duotone 9 mm Luger<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>  
-   </tr> 
-    
-   <tr><th colspan="4"><span style="font-size:1.2em; text-decoration:underline;margin-left:10px">Springfield</span> <span style="font-size:1.1em"> America’s most trusted  solution</span></th>
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/3c.jpg" style="width:300px;" align="bottom">Springfield XD - M .40 S&amp;W<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/036.jpg" style="width:300px;" align="bottom">Springfield Armory Colt 1911 0.45<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>      
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/028.jpg" style="width:300px;" align="bottom">Springfield 1911 cal. 45 ACP<br>Price: &#8364;850=&#3647;0.01269</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2g.jpg" style="width:300px;" align="bottom">Springfield 1911A1 cal. 45<br>Price: &#8364;850=&#3647;0.01269</p>
-    </td>      
-   </tr>
-
-   <tr><th colspan="4"><span style="font-size:1.2em; text-decoration:underline;margin-left:10px">Beretta </span> <span style="font-size:1.1em"> produces some of the finest performing handguns</span></th>
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/1a.jpg" style="width:300px;" align="bottom">Beretta90TW 9mm<br>Price: &#8364;900=&#3647;0.01343</p>
-    </td>  
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/19.jpg" style="width:300px;" align="bottom">Beretta 92 FS INOX<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>     
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/3b.jpg" style="width:300px;" align="bottom">Beretta 92 FS 9mm Luger<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>    
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/BerettaM9A3.jpg" style="width:300px;" align="bottom">Beretta M9A3<br>Price: &#8364;700=&#3647;0.01045</p>
-    </td>   
-   </tr>
- 
-   <tr><th colspan="4"><span style="font-size:1.2em; text-decoration:underline;margin-left:10px">Smith &amp; Wesson </span> <span style="font-size:1.1em"> the most famous American arms company founded in 1856</span></th>  
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2c.jpg" style="width:300px;" align="bottom">Smith &amp; Wesson 5906 PPC 1500 9x19mm<br>Price: &#8364;1300=&#3647;0.01940</p>
-    </td>     
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2f.jpg" style="width:300px;" align="bottom">Smith&amp;Wesson 629 .44MAG<br>Price: &#8364;900=&#3647;0.01343</p>
-    </td>          
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/029.jpg" style="width:300px;" align="bottom">Smith &amp; Wesson, mod. 686 357 Magnum 2,5<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/SWMP40.jpg" style="width:300px;" align="bottom">Smith &amp; Wesson M&amp;P40<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>
-   </tr>
-
-   <tr><th colspan="4"><span style="font-size:1.2em; text-decoration:underline;margin-left:10px">Sig Sauer </span> <span style="font-size:1.1em"> are strong, durable, and reliable handguns</span></th>   
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/018.jpg" style="width:300px;" align="bottom">Sig Sauer P229 9mm Luger<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>     
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2m.jpg" style="width:300px;" align="bottom">Sig Pro SP2009 9mm Luger<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>     
-     <td class="figure" style="width:300px;height:200px">
-      <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/1.jpg" style="width:300px;" align="bottom">Sig Sauer P229S .357<br>Price: &#8364;1100=&#3647;0.01642</p>
-     </td>
-    <td class="figure" style="width:300px;height:200px">
-      <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/SigSauerXFive.jpg" style="width:300px;" align="bottom">Sig Sauer X-Five Super Match<br>Price: &#8364;1100=&#3647;0.01642</p>
-    </td>                     
-   </tr>
-
-   <tr><th colspan="4"><span style="font-size:1.2em; text-decoration:underline;margin-left:10px">Handguns from other manufacturers</span></th>   
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/030.jpg" style="width:300px;" align="bottom">Taurus 357 Magnum mod. 689<br>Price: &#8364;650=&#3647;0.00970</p>
-    </td>  
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/3a.jpg" style="width:300px;" align="bottom">Remington 1911 R1 .45ACP<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>     
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2t.jpg" style="width:300px;" align="bottom">Colt Police Positive MK V cal. 38<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2j.jpg" style="width:300px;" align="bottom">Heckler &amp; Koch USP .45ACP<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>                     
-   </tr>  
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/037.jpg" style="width:300px;" align="bottom">Ruger KGP 161, 357 Magnum<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>     
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/022.jpg" style="width:300px;" align="bottom">Walther P38, The production year 1944<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>      
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2e.jpg" style="width:300px;" align="bottom">STI LS 40 cal. 40 SW<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/026.jpg" style="width:300px;" align="bottom">Norinco 1911 A1 Dual Tone, .45<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>       
-   </tr>
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2d.jpg" style="width:300px;" align="bottom">P08 American Eagle cal. 9<br>Price: &#8364;900=&#3647;0.01343</p>
-    </td>            
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2k.jpg" style="width:300px;" align="bottom">Bernardelli Praktical  9x21mm IMI<br>Price: &#8364;850=&#3647;0.01269</p>
-    </td>         
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2p.jpg" style="width:300px;" align="bottom">Taurus brasil Ultralite .38<br>Price: &#8364;750=&#3647;0.01119</p>
-    </td>  
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/016.jpg" style="width:300px;" align="bottom">Ruger Super Redhawk 44 Magnum<br>Price: &#8364;850=&#3647;0.01269</p>
-    </td>   
-   </tr>
-
-   <tr><th colspan="4"><span style="font-size:1.2em; text-decoration:underline;margin-left:10px">Rifles</span></th>   
-   <tr>
-    <td class="figure" style="width:306px;height:101px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/013.jpg" style="width:300px;" align="bottom">Brno Super 9,3x74R optics Kahles Helia super<br>Price: &#8364;1600=&#3647;0.02388</p>
-    </td>    
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/015.jpg" style="width:300px;" align="bottom">Sniper Rifle SVD Dragunov<br>Price: &#8364;1600=&#3647;0.02388</p>
-    </td> 
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/021.jpg" style="width:300px;" align="bottom">Shot Gun Benelli M1 with collimator<br>Price: &#8364;950=&#3647;0.01418</p>
-    </td>   
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2b.jpg" style="width:300px;" align="bottom">G43 gr. A<br>Price: &#8364;1850=&#3647;0.02761</p>
-    </td>
-   </tr>   
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2n.jpg" style="width:300px;" align="bottom">Automatic feed Shot Gun Saiga 12K, cal.12/76<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/5.jpg" style="width:300px;" align="bottom">AEK 971, full auto<br>Price: &#8364;900=&#3647;0.01343</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/12.jpg" style="width:300px;" align="bottom">Sniper Rifle Mauser k-98,optics Hensoldt Wetzlar<br>Price: &#8364;1900=&#3647;0.02836</p>
-    </td>    
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/3.jpg" style="width:300px;" align="bottom">AR15, 5.56 NATO<br>Price: &#8364;950=&#3647;0.01418</p>
-    </td>  
-   </tr>
-   
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/031.jpg" style="width:300px;" align="bottom">AK - 47<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/AK74.jpg" style="width:300px;" align="bottom">AK - 74<br>Price: &#8364;950=&#3647;0.01418</p>
-    </td>
-     <td class="figure" style="width:306px;height:101px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/Aks74u1.jpg" style="width:300px;" align="bottom">AKS74U - a shortened version<br>Price: &#8364;1300=&#3647;0.01940</p>
-    </td>       
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/MiniUzi45ACP.jpg" style="width:300px;" align="bottom">Mini Uzi .45 ACP <br>Price: &#8364;950=&#3647;0.01418</p>
-    </td>      
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/8a.jpg" style="width:300px;" align="bottom">CZ 858 Tactical 7,62x39<br>Price: &#8364;850=&#3647;0.01269</p>
-    </td>   
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/010.jpg" style="width:300px;" align="bottom">CZ 858 Tactical P Semi automatic<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>   
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/025.jpg" style="width:300px;" align="bottom">CZ Scorpion 91S, SA 61 Automatic<br>Price: &#8364;850=&#3647;0.01269</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/hotovo2.jpg" style="width:300px;" align="bottom">CZ Scorpion EVO 3 A1<br>Price: &#8364;1250=&#3647;0.01866</p>
-    </td>     
-   </tr>       
-   <tr>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/32.jpg" style="width:300px;" align="bottom">GSG  5, cal.22LR <br>Price: &#8364;850=&#3647;0.01269</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/033.jpg" style="width:300px;" align="bottom">GSG 5 SD cal.22LR with collimator Red Dot<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/035.jpg" style="width:300px;" align="bottom">GSG 5 .22LR with optics 6x32<br>Price: &#8364;800=&#3647;0.01194</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">  &nbsp;      </td>
-   </tr>      
-   
-   <tr><th colspan="4"><span style="font-size:1.2em; text-decoration:underline;margin-left:10px">RPG </span> <span style="font-size:1.1em"> A rocket-propelled grenade is a shoulder-fired missile weapon that launches rockets equipped with an explosive warhead</span></th>     
-   <tr>  
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/1RPG75web.jpg" style="width:300px;" align="bottom">RPG-75 68mm 3.1 kg (Complete) 630mm (Stowed), 890mm (Extended)<br>Price: &#8364;850=&#3647;0.01269</p>
-    </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/2RPG7web.jpg" style="width:300px;" align="bottom">RPG-7D Several Sizes of Overcaliber Rockets 6.3 kg 650mm/950mm<br>Price: &#8364;1200=&#3647;0.01791</p>
-    </td>    
-    <td class="figure" style="width:306px;height:101px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/rpg_16.jpg" style="width:300px;" align="bottom">The RPG-16 is an improved version of the RPG-7 with increased range and accuracy<br>Price: &#8364;1400=&#3647;0.02090</p>
-    </td>     
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/pg29.jpg" style="width:300px;" align="bottom">RPG-29 Vampir rocket launcher with PG-29V rocket shown alongside<br>Price: &#8364;1500=&#3647;0.02239</p>
-    </td>   
-   </tr>
-   
-   <tr><th colspan="4"><span style="font-size:1.2em; text-decoration:underline;margin-left:10px">Equipment   </span></th>   
-   <tr>  
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/027.jpg" style="width:300px;" align="bottom">Nightforce ATACR 5-25-56 Zerostop<br>Price: &#8364;1200=&#3647;0.01791</p>
-    </td>   
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/granaty.jpg" style="width:300px;" align="bottom">Hand grenadeTyp F-1 und RGD-5 (600 Eur for 10 pcs.package)<br>Price: &#8364;700=&#3647;0.01045</p>
-    </td>       
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/rugged_oculus.jpg" style="width:300px;" align="bottom">Silencer Rugged Oculus<br>Price: &#8364;450=&#3647;0.00672</p>
-   </td>
-    <td class="figure" style="width:300px;height:200px">
-     <p style="color:white;font-size:1.1em;text-decoration:none"><img alt="" src="images/ammo.jpg" style="width:300px;" align="bottom">Ammo 9mm (500 Rounds)<br>Price: &#8364;600=&#3647;0.00896</p>
-    </td>  
-   </tr>
-   
-   <tr><td  colspan="4"><hr><br></td></tr>
-   <tr>  
-    <td  colspan="4" style="color:#FFFF00; font-size:1.3em;text-decoration:underline">     
-     Information<br><br>
-    </td> 
-   </tr>
-   <tr>  
-    <td  colspan="4" style="font-size:1.1em">
-     All weapons are fully functional. Our products we have also stored directly in the country of the EU. We speak English, German and Russian. <br>
-     We have a lot more weapons for sale. The other will be offered after the agreement through the mail.<br><br>
-    </td> 
-   </tr>
-   <tr>  
-    <td  colspan="4" style="font-size:1.1em">     
-     <span style="color:#FFFF00;">Accessories</span>
-     such as ammo, optics and more we sell on request and only for our customers who previously bought weapons from us.<br><br>
-    </td> 
-   </tr>   
-   <tr>  
-    <td  colspan="4" style="font-size:1.2em;text-decoration:underline;color:#FFFF00">How to buy<br></td> 
-   </tr>
-
-   <!--  with address -->
-   <tr>  
-    <td  colspan="4" style="font-size:1.1em">     
-     &nbsp;1.Choose your item<br>
-     &nbsp;2.Do payment to the bitcoin wallet :<br>
-     &nbsp;&nbsp;<strong>bc1qegp2zygye5v8cqa6d2r9ljrkprlvtecyxlwg92</strong><br>
-     &nbsp;Qr-code:<br>
-     &nbsp;<img width="150" src="luckp47.png" alt=""><br>
-     &nbsp;3.Inform us by email what item you order and exact amount that you have sent<br>
-     &nbsp;4.Detailed shipping instructions will be sent to your email after payment<br><br>
-    </td> 
-   </tr>
-
-   <!--  without address
-   <tr>  
-    <td  colspan="4" style="font-size:1.1em">     
-     &nbsp;1.Choose your item<br>
-     &nbsp;2.Do payment : &nbsp;&nbsp;<strong style="font-size:1.1em">Bitcoin address for payment will be sent on request by email</strong><br>
-     &nbsp;3.Inform us by email what item you order and exact amount that you have sent<br>
-     &nbsp;4.Detailed shipping instructions will be sent to your email after payment<br><br>
-    </td> 
-   </tr>
-   -->
-
-   <tr>  
-    <td  colspan="4" style="font-size:1.1em">     
-     <span style="color:#FFFF00;">Payment:</span>
-     For the first purchase, we require payment in advance. When you purchase again in our Shop, you pay 50% in advance and the rest after receiving the goods.<br><br>
-    </td> 
-   </tr>
-   <tr>  
-    <td  colspan="4" style="font-size:1.1em">   
-     <span style="color:#FFFF00;">Shiping:</span>
-     Our new: after several requests from our customers we send our goods to all over the world.<br>
-     You gotta give us the exact address ( GPS coordinates) where you want the package delivered.<br>
-     All Prices Include Shipping &amp; Handling!<br>
-     All Weapons Are Delivered With 50 Bullets For Free<br>
-     NEW: Shipping is Worldwide!!!<br><br>    
-    </td> 
-   </tr>
-   <tr>  
-    <td  colspan="4">E-mail: <a href="mailto:luckp47@bitemail.net" style="color:#FFFF00">luckp47@bitemail.net</a></td> 
-   </tr>
-   <tr><td  colspan="4" style="vertical-align:bottom"><br><br><hr></td></tr>
-  
-   <tr>  
-    <td align="center" colspan="4" style="color:#FF8000;font-family:Arial; vertical-align:top"><br>Copyright &copy; 2026 Lucky 47 Shop. All rights reserved.</td> 
-   </tr>
-</table>
-<br><br>
-</div>
-</div>
 </body>
 </html>
+
